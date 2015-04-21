@@ -9,11 +9,22 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container header">
-      <div class="navbar-header">
-        <a class="logo navbar-brand" href="#"><img src="{% static 'webpage/media/ccct.gif'%}" width="100px"></a>
+  <!--<div class="image-one"><a class="logo navbar-brand" href="#"></a></div> -->
+  <div class="navjumb">
+    <div class="container">
+      <div class="col-md-4">
+        <div class="image-two"><a class="logo navbar-brand" href="#"></a></div>
       </div>
+      <div class="col-md-8">
+        <br>
+        <br>
+        <h2>Centro de Calculo Cientifico y Tecnologico<h2>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navjumb navbar navbar-default">
+    <div class="container header">
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li class="{% block homeActive %}{% endblock %}"><a href="#">Inicio</a></li>
@@ -32,17 +43,9 @@
         </ul>
       </div>
     </div>
-  </nav><br><br> 
-
-  {% block body %} {% endblock %}
-
-
-  <nav class="navbar navbar-default navbar-fixed-bottom">
-    <div class="container footer">
-      Centro de C&aacute;lculo Cient&iacute;fico y Tecnol&oacute;gico © 2015. Todos los derechos reservados
-    </div>
   </nav>
 
+  {% block body %} {% endblock %}
 
   <script type="text/javascript" src="{% static 'webpage/js/jquery-2.1.3.js' %}"></script>
   <script type="text/javascript" src="{% static 'webpage/js/bootstrap.js' %}"></script>

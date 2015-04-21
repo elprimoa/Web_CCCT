@@ -1,7 +1,9 @@
-.logo {
-	margin-top: -5%;
+.navjumb {
+	margin-bottom: 0px;
 }
 
-.footer {
-	padding-top: 1%;
+div.image-two {
+	content:url('../media/ccct.gif');
+	margin-bottom: 15px;
+	margin-top: 15px;
 }
