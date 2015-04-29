@@ -1,0 +1,54 @@
+{% extends "webpage/base.html" %}
+
+{% block title %} - Miembros{% endblock %}
+{% block memberActive%} active {% endblock %}
+
+{% block body%}
+
+<div class="container backwhite">
+  <br>
+  <h3 class="title"><b>Profesores</b></h3><br>
+	<div class="col-md-11 col-md-offset-1 centerfy">
+		<div class="panel-group" id="accordion">
+			{% for m in profesors %}
+			<div class="panel panel-default">
+				<div id="m{{m.id}}" class="panel-heading">
+					<h4 id="mm{{m.id}}" class="panel-title content">
+						<a data-toggle="collapse" data-parent="#accordion" href="#member{{m.id}}"> <b>{{m.name}}</b></a> 
+					</h4>
+					<div id="member{{m.id}}" class="panel-collapse collapse">
+						<div id="dv{{m.id}}" class="panel-body content">
+							<p id="dvp{{m.id}}">{{m.abstract}}</p><br>
+							<p><b>Email:</b> {{m.email}}</p>
+							<p><b>P&aacute;gina Web:</b> {{m.link}}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+	<h3 class="title"><b>Auxiliar docente</b></h3><br>
+	<div class="col-md-11 col-md-offset-1 centerfy">
+		<div class="panel-group" id="accordion">
+			{% for m in auxiliar %}
+			<div class="panel panel-default content">
+				<div id="m{{m.id}}" class="panel-heading">
+					<h4 id="mm{{m.id}}" class="panel-title content">
+						<a data-toggle="collapse" data-parent="#accordion" href="#member{{m.id}}"> <b>{{m.name}}</b></a> 
+					</h4>
+					<div id="member{{m.id}}" class="panel-collapse collapse">
+						<div id="dv{{m.id}}" class="panel-body content">
+							<p id="dvp{{m.id}}">{{m.abstract}}</p><br>
+							<p><b>Email:</b> {{m.email}}</p>
+							<p><b>P&aacute;gina Web:</b> {{m.link}}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+
+{% endblock %}

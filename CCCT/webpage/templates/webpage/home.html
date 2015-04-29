@@ -2,13 +2,44 @@
 
 {% block homeActive%} active {% endblock %}
 
+{% load staticfiles %}
+
 {% block body%}
 
-<div class="container">
+<div class="container backwhite">
   <br>
-	<div class="col-md-11 col-md-offset-1 centerfy">
-		<div class="panel-group" id="accordion"></div>
+	<div class="row">
+		<div class="col-md-offset-1 col-md-5 content">
+			<h3><b>Sobre el CCCT</b></h3><br>
+			<p>Fue creado con la finalidad de desarrollar y promover la investigaci&oacute;n b&aacute;sica necesaria para abordar problemas que surgen en la modelaci&oacute;n matem&aacute;tica de las diferentes &aacute;reas de las ciencias b&aacute;sicas y las ingenier&iacute;as.</p>
+			<p>Entre las actividades fundamentales del centro est&aacute; la formaci&oacute;n de personal capacitado a diferentes niveles: pregrado, maestr&iacute;a y doctorado. En ese sentido el centro ofrece apoyo a diferentes postgrados y departamentos de la UCV y de muchas otras universidades del pa&iacute;s.</p><br>
+			<h3><b>Objetivos</b></h3><br>
+			<p>El objetivo general del centro es desarrollar y promover la investigaci&oacute;n b&aacute;sica necesaria para abordar problemas mediante modelos matem&aacute;ticos. El Centro de C&aacute;lculo Cient&iacute;fico tiene la capacidad para encarar y resolver original y competitivamente problemas de envergadura de la industria, tales como:</p>
+			<ul>
+				<li>Mec&aacute;nica de fluidos: simulaci&oacute;n de yacimientos, flujo de un fluido multif&aacute;sico en tuber&iacute;as inclinadas y verticales.</li>
+				<li>Sismolog&iacute;a: trazado de rayos s&iacute;smicos y tomograf&iacute;a en tres dimensiones en medios anisotropos.</li>
+			</ul><br>
+			
+		</div>
+		<div class="col-md-6">
+			<div class="image-faculty"><a class="logo navbar-brand" href="#"></a></div>
+			<div class="image-faculty"><a class="logo navbar-brand" href="#"></a></div>
+		</div>
 	</div>
+	<div class="row">
+		<div class="col-md-offset-1 col-md-10 content">
+			<h3><b>L&iacute;neas de investigaci&oacute;n</b></h3><br>
+			<p>Actualmente el Centro de C&aacute;lculo est&aacute; orientado principalmente hacia las siguientes l&iacute;neas de investigaci&oacute;n:</p>
+			<ul>
+				<li>Resoluci&oacute;n num&eacute;rica de sistemas de ecuaciones lineales grandes y ralos (SPARSE) mediante m&eacute;todos iterativos, y t&eacute;cnicas de precondicionamiento asociadas. </li>
+				<li>Resoluci&oacute;n num&eacute;rica de sistemas de ecuaciones diferenciales mediante m&eacute;todos num&eacute;ricos en diferencias finitas, elementos finitos y espectrales. </li>
+				<li>Resoluci&oacute;n num&eacute;rica de problemas de optimizaci&oacute;n no-lineal, con o sin restricciones.</li>
+				<li>Resoluci&oacute;n num&eacute;rica de problemas en espacios de matrices.</li>
+				<li>M&eacute;todos avanzados para el c&aacute;lculo de autovalores y autovectores.</li>
+				<li>M&eacute;todo de Proyecciones Alternantes, aplicaciones y variantes. </li>
+			</ul>
+		</div>
+	</div>	<br><br>
 </div>
 
 {% endblock %}
