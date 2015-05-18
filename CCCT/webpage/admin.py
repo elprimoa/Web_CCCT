@@ -5,4 +5,5 @@ from webpage.models import *
 
 admin.site.register(Member)
 admin.site.register(Project)
-admin.site.register(Member_Project)
+admin.site.register(Course)
+admin.site.register(Tesis)

@@ -5,22 +5,26 @@
 
 {% block body%}
 
-<div class="container backwhite">
+<div class="container backwhite bottom-offset">
   <br>
-  <h3 class="title"><b>Proyectos</b></h3><br>
-	<div class="col-md-11 col-md-offset-1 centerfy">
+	<div class="col-md-10 col-md-offset-1">
+		<h3 class="title"><b>Proyectos</b></h3><br>
 		<div class="panel-group" id="accordion">
 			{% for p in projects %}
 			<div class="panel panel-default">
 				<div id="p{{p.id}}" class="panel-heading">
-					<h4 id="pp{{p.id}}" class="panel-title">
+					<h4 id="pp{{p.id}}" class="panel-title content">
 						<a data-toggle="collapse" data-parent="#accordion" href="#project{{p.id}}"> <b>{{p.title}}</b></a> 
 					</h4>
 					<div id="project{{p.id}}" class="panel-collapse collapse">
-						<div id="dv{{p.id}}" class="panel-body">
-							<p><b>Responsable y coordinador:</b> {{p.responsible.name}}</p>
-							<p><b>Financiado por:</b> {{p.funded}}</p>
-							<p id="dvp{{p.id}}">{{p.abstract}}</p><br>
+						<div id="dv{{p.id}}" class="panel-body content">
+							{% if p.rtype == 0 %}
+							<p><b>Responsable y coordinador: </b>
+							{% else %} 
+							<p><b>Colaborador: </b>
+							{% endif %}
+							{{p.responsible.name}}</p>
+							<p><b>Financiado por:</b> {{p.funded}}</p><br>
 						</div>
 					</div>
 				</div>

@@ -5,7 +5,7 @@
 div.image-two {
 	content:url('../media/ccct.gif');
 	margin-bottom: 15px;
-	margin-top: 15px;
+	margin-top: 10%;
 	padding-left: 18%;
 }
 
@@ -59,6 +59,9 @@ div.image-faculty {
 
 .backwhite {
 	background-color: #fff;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	font-size: 14pt;
 }
 
 .borderless {
@@ -76,4 +79,9 @@ div.image-faculty {
 .top-padding {
 	padding-top: 5%;
 	padding-bottom: 5%;
+}
+
+#inputFile {
+	position: absolute;
+	left: -5000px;
 }
